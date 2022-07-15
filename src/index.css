@@ -2,6 +2,7 @@
 
 :root {
     --bs-body-bg: #c3e3fd !important; 
+    --toastify-toast-width: 500px !important;
 }
 
 body {

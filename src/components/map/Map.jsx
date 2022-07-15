@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import toastMessages from '../../helpers/toast/toastMessage'
 import Modal from '../modal/Modal'
 import data from '../../data/data'
 
@@ -9,7 +10,7 @@ export default function Map() {
 
     const getInfo = (e) => {
 	if (data.filter(dep => dep.id===e.target.id).length <= 0) {
-	    alert(`${e.target.id} no tiene información para mostrar.`)
+	    toastMessages.warn(`${e.target.id} no tiene información para mostrar.`)
 	    return 
 	} 
 
