@@ -4,16 +4,15 @@ import Map from './components/map/Map'
 import './App.css';
 
 function App() {
-
-  return (
-      <div className='app'>
-	<BrowserRouter>
-	      <Routes>
-  		  <Route exact path="/*" element={<Map/>} />
-	      </Routes>
-	  </BrowserRouter>
-    </div>
-  )
+	return (
+		<div className='app'>
+			<BrowserRouter>
+				<Routes>
+				<Route exact path="/*" element={<Map/>} />
+				</Routes>
+			</BrowserRouter>
+		</div>
+  	)
 }
 
 export default App;
